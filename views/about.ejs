@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>О нас</title>
+  </head>
+  <body>
+    <% include blocks/header.ejs %>
+    <h1>Это мы</h1>
+    <hr>
+    <h2>Можете написать нам</h2>
+    <form method="post" action="/about">
+      <label for="name">Имя</label>
+      <input type="text" name="name" value="" id="name">
+      <label for="email">Электронная почта</label>
+      <input type="text" name="email" value="" id="email">
+      <label for="question">Вопрос</label>
+      <input type="text" name="question" value="" id="question">
+      <button type="submit">Отправить</button>
+    </form>
+  </body>
+</html>
